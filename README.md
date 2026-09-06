@@ -43,6 +43,8 @@ Notes
 - Example `.env` keys: `MONGODB_URI`, `JWT_SECRET`.
 
 If you want, I can run the git commands here for you — tell me whether I should (and confirm your GitHub username or whether `gh` is installed and authenticated). 
+
+Trigger redeploy note: small metadata change to trigger Vercel redeploy.
 # SafarBook — Landing Site (Next.js + Tailwind)
 
 This repository contains a simple Next.js landing site for SafarBook. It focuses on a clean, mobile-first, nature-inspired design and direct WhatsApp integration for lead generation and bookings.
