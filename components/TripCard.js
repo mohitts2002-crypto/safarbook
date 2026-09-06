@@ -4,7 +4,7 @@ export default function TripCard({ trip, onOpen }){
   return (
     <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
       <div className="w-full h-40 sm:h-44 md:h-48 relative">
-        <img src={trip.hero} alt={trip.title} className="object-cover w-full h-full" />
+        <img src={trip.imageUrl || trip.hero} alt={trip.title} className="object-cover w-full h-full" />
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-base md:text-lg">{trip.title}</h3>

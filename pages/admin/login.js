@@ -20,7 +20,7 @@ export default function AdminLogin(){
         <form className="mt-4 space-y-3" onSubmit={submit}>
           <input value={form.username} onChange={e=>setForm({...form, username:e.target.value})} placeholder="username" className="w-full p-2 border rounded" />
           <input type="password" value={form.password} onChange={e=>setForm({...form, password:e.target.value})} placeholder="password" className="w-full p-2 border rounded" />
-          <p className="text-xs text-slate-500">Dev credentials — username: <strong>safarbook</strong> | password: <strong>0921</strong></p>
+          {/* Dev credentials removed from UI for security */}
           <div className="flex items-center justify-between">
             <button className="bg-safar-forest text-white px-4 py-2 rounded">Login</button>
             {error && <span className="text-red-600">{error}</span>}

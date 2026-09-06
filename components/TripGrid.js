@@ -6,9 +6,17 @@ export default function TripGrid({ onOpen, query, category, setCategory }){
   const q = (query || '').trim().toLowerCase()
 
   const filtered = trips.filter(t=>{
-    const matchesCategory = !category || category==='All' ? true : t.category === category
+    const matchesCategory = (()=>{
+      if(!category || category === 'All') return true
+      const c = (category||'').toLowerCase().trim()
+      const tc = (t.category||'').toLowerCase().trim()
+      // handle common synonyms: any category containing 'weekend' should match weekend trips
+      if(c.includes('weekend')) return tc.includes('weekend')
+      return tc === c
+    })()
+
     const matchesQuery = !q ? true : (
-      t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q) || t.category.toLowerCase().includes(q) || t.highlights.join(' ').toLowerCase().includes(q)
+      t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q) || t.category.toLowerCase().includes(q) || (t.highlights||[]).join(' ').toLowerCase().includes(q)
     )
     return matchesCategory && matchesQuery
   })

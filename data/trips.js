@@ -1,5 +1,83 @@
 const trips = [
   {
+    id: "dharamshala-mcleodganj",
+    title: "Dharamshala & McLeodganj Weekend Vibes",
+    category: "Weekend Getaways",
+    duration: "2 Nights / 3 Days",
+    budget: "From ₹6,000",
+    startPoint: "Chandigarh to Chandigarh",
+    imageUrl: "https://images.unsplash.com/photo-1626714485858-c09778eeee0d?q=80&w=800&auto=format&fit=crop",
+    hero: "https://images.unsplash.com/photo-1626714485858-c09778eeee0d?q=80&w=1600&auto=format&fit=crop",
+    highlights: ["Cafes", "Namgyal Monastery", "Bhagsu Nag", "Dal Lake", "Triund"],
+    itinerary: [
+      "Day 1: Drive from Chandigarh to Dharamshala. Check-in to premium hotel/homestay. Explore local cafes and Namgyal Monastery.",
+      "Day 2: Local sightseeing including Bhagsu Nag, Dal Lake, and optional short hike towards Triund. Find peace in the mountains.",
+      "Day 3: Breakfast and return drive to Chandigarh with happy memories."
+    ],
+    includes: ["Premium Hotels/Homestays", "All Meals", "Travel (Chandigarh to Chandigarh)", "Local Sightseeing", "Group Travel"]
+  },
+  {
+    id: "triund",
+    title: "Triund Trek",
+    category: "Weekend Getaways",
+    duration: "2 Days / 1 Night",
+    budget: "From ₹6,000",
+    startPoint: "Chandigarh to Dharamshala",
+    imageUrl: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=800&auto=format&fit=crop",
+    hero: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=1600&auto=format&fit=crop",
+    highlights: ["Dhauladhar views", "Meadows", "Sunset"],
+    itinerary: [
+      "Day 1: Pickup from Chandigarh, drive to Dharamshala basecamp. Trek to Triund top, enjoy sunset views, overnight stay in dome tents.",
+      "Day 2: Morning nature walk, sunrise views. Trek down to basecamp and drive back to Chandigarh."
+    ],
+    includes: ["Quality stays/camps", "All Meals", "Transport from Chandigarh", "Certified Guide"]
+  },
+  {
+    id: "hampta",
+    title: "Hampta Pass Trek",
+    category: "Crossover Passes",
+    duration: "6 Days / 5 Nights",
+    budget: "₹8,000 – ₹14,000",
+    startPoint: "Chandigarh to Manali",
+    imageUrl: "https://images.unsplash.com/photo-1626545163451-b8fa58a69a9b?q=80&w=800&auto=format&fit=crop",
+    hero: "https://images.unsplash.com/photo-1626545163451-b8fa58a69a9b?q=80&w=1600&auto=format&fit=crop",
+    highlights: ["Lush valleys to cold desert", "River crossings", "High altitude pass"],
+    itinerary: [
+      "Day 1: Chandigarh to Manali. Basecamp check-in and briefing.",
+      "Day 2: Drive to Jobra, trek to Chika campsite.",
+      "Day 3: Trek to Balu Ka Gera along river streams.",
+      "Day 4: The D-Day! Steep climb to Hampta Pass (14,000+ ft), descend to Shea Goru in Lahaul.",
+      "Day 5: Trek to Chatru, drive back to Manali via Atal Tunnel.",
+      "Day 6: Breakfast in Manali, drive back to Chandigarh."
+    ],
+    includes: ["Quality stays/camps", "All Meals", "Transport from Chandigarh", "Certified Guide", "Forest Permits"]
+  },
+  {
+    id: "spiti",
+    title: "Spiti Valley Circuit",
+    category: "Road Trips",
+    duration: "7 Days / 6 Nights",
+    budget: "₹6,000 – ₹12,000",
+    startPoint: "Chandigarh",
+    imageUrl: "https://images.unsplash.com/photo-1610444585145-131713d3328f?q=80&w=800&auto=format&fit=crop",
+    hero: "https://images.unsplash.com/photo-1610444585145-131713d3328f?q=80&w=1600&auto=format&fit=crop",
+    highlights: ["Key Monastery", "Chandratal Lake", "Hikkim Post Office"],
+    itinerary: [
+      "Day 1: Chandigarh to Sangla.",
+      "Day 2: Sangla to Chitkul & Kalpa.",
+      "Day 3: Kalpa to Kaza (Heart of Spiti).",
+      "Day 4: Kaza Local (Key Monastery, Hikkim, Langza).",
+      "Day 5: Kaza to Chandratal Lake.",
+      "Day 6: Chandratal to Manali (via Rohtang/Kunzum).",
+      "Day 7: Manali to Chandigarh."
+    ],
+    includes: ["Guesthouse/Camp Stay", "All Meals", "SUV/Traveller Transport", "Driver charges & Tolls"]
+  }
+]
+
+export default trips
+const trips = [
+  {
     id: "triund",
     title: "Triund Trek",
     category: "Weekend Treks",

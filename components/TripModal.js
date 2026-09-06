@@ -27,7 +27,7 @@ export default function TripModal({ trip, onClose }){
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
       <div className="relative bg-white sm:rounded-lg rounded-none sm:max-w-3xl w-full max-h-full sm:mx-4 overflow-auto sm:max-h-[90vh]">
-        <div className="h-56 bg-cover bg-center rounded-t-lg" style={{backgroundImage:`url(${trip.hero})`}} />
+        <div className="h-56 bg-cover bg-center rounded-t-lg" style={{backgroundImage:`url(${trip.imageUrl || trip.hero})`}} />
         <div className="p-6">
           <div className="flex items-start justify-between">
             <div>
