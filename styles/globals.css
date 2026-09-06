@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #FBF7F3;
+  --accent: #154734;
+  --accent-2: #FF8A4B;
+}
+
+html,body,#__next{height:100%;}
+body{
+  @apply bg-safar-cream text-slate-800 antialiased;
+  background-color:var(--bg);
+}
+
+.container{max-width:1200px;margin-left:auto;margin-right:auto;padding:0 1rem}
